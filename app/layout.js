@@ -1,0 +1,33 @@
+import { GoogleTagManager } from "@next/third-parties/google";
+import { Inter } from "next/font/google";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Footer from "./components/footer";
+import Navbar from "./components/navbar";
+import "./css/card.scss";
+import "./css/globals.scss";
+import ScrollToTop from "./components/helper/scroll-to-top";
+const inter = Inter({ subsets: ["latin"] });
+
+export const metadata = {
+  title: "Shubham Upadhyay - Software Developer",
+  description:
+    "My name is SHUBHAM UPADHYAY. I am a passionate and versatile programmer with expertise in full-stack web development, focusing on JavaScript, cloud computing, and graphic design. I have experience deploying scalable applications on modern cloud platforms, ensuring performance and security, and creating visually engaging designs that enhance user experiences. I am enthusiastic about building user-friendly web applications, leveraging cloud technologies, and crafting compelling designs. Always eager to learn and grow, I am open to opportunities that align with my skills and interests, where I can contribute meaningfully and thrive professionally.",
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <body className={inter.className}>
+        <ToastContainer />
+        <main className="min-h-screen relative mx-auto px-6 sm:px-12 lg:max-w-[70rem] xl:max-w-[76rem] 2xl:max-w-[92rem] text-white">
+          <Navbar />
+          {children}
+          <ScrollToTop />
+        </main>
+        <Footer />
+      </body>
+      <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM} />
+    </html>
+  );
+}
