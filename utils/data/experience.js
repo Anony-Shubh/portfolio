@@ -15,6 +15,6 @@ export const experiences = [
     id: 3,
     title: "Graphic Designer",
     company: "Kreative Eye",
-    duration: "(Dec 2022 - Present)"
+    duration: "(Jan 2020 - Present)"
   }
 ]
