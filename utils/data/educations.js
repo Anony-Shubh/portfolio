@@ -4,7 +4,7 @@ export const educations = [
     title: "Bachelor Degree",
     duration: "2021 - Present",
     institution: "Kalinga Institute of Industrial Technology University, Bhubaneswar",
-    cgpa: "CGPA: 8.02",
+    cgpa: "CGPA: 8.15",
   },
   {
     id: 2,

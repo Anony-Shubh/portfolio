@@ -11,7 +11,7 @@ export const personalData = {
   linkedIn: 'https://www.linkedin.com/in/anony-shubh/',
   twitter: 'https://x.com/Banarasi_shubh',
   stackOverflow: 'https://stackoverflow.com/users/18998425/shubham-upadhyay',
-  devUsername: "anony-shubh",
+  devUsername: "anony_shubh",
   leetcode: "https://leetcode.com/said3812/",
-  resume: "https://drive.google.com/file/d/1eLx4JJPmZ9YnGKdmBff0OGrp_deCpg5O/view?usp=drive_link"
+  resume: "https://drive.google.com/file/d/1fSQXdRXX3eFEk_Hl5n9XcT86DIGCA3uA/view?usp=drive_link"
 }

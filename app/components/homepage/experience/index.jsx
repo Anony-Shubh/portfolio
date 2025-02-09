@@ -19,7 +19,7 @@ function Experience() {
       />
 
       <div className="flex justify-center my-5 lg:py-8">
-        <div className="flex  items-center">
+        <div className="flex items-center">
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
           <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
             Experiences
@@ -38,9 +38,15 @@ function Experience() {
 
           <div>
             <div className="flex flex-col gap-6">
-              {
-                experiences.map(experience => (
-                  <GlowCard key={experience.id} identifier={`experience-${experience.id}`}>
+              {experiences.map(experience => (
+                <a 
+                  key={experience.id} 
+                  href={experience.link} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:opacity-90 transition duration-300"
+                >
+                  <GlowCard identifier={`experience-${experience.id}`}>
                     <div className="p-3 relative">
                       <Image
                         src="/blur-23.svg"
@@ -55,7 +61,7 @@ function Experience() {
                         </p>
                       </div>
                       <div className="flex items-center gap-x-8 px-3 py-5">
-                        <div className="text-violet-500  transition-all duration-300 hover:scale-125">
+                        <div className="text-violet-500 transition-all duration-300 hover:scale-125">
                           <BsPersonWorkspace size={36} />
                         </div>
                         <div>
@@ -69,14 +75,14 @@ function Experience() {
                       </div>
                     </div>
                   </GlowCard>
-                ))
-              }
+                </a>
+              ))}
             </div>
           </div>
         </div>
       </div>
     </div>
   );
-};
+}
 
 export default Experience;
