@@ -34,6 +34,17 @@ export const projectsData = [
         demo: '',
         image: realEstate,
     },
+    {
+        id: 5,
+        tools: ['AWS (EC2, ECS, S3, Amplify)', 'Node.js', 'TypeScript', 'Prisma', 'PostgreSQL', 'Swagger', 'Postman', 'GitHub Actions', 'Docker'],
+        name: 'ZenStreet.ai: Scalable Infra & Backend Automation\n(SDE Intern)',
+        code: '',
+        description: 'Engineered scalable AWS infrastructure using EC2, ECS Fargate, and S3 with autoscaling to handle 50K+ RPS. Built secure REST APIs with Node.js, TypeScript, and Prisma, including JWT-based auth, RBAC, and pagination. Automated API documentation workflows by converting Swagger (OpenAPI) specs to Postman collections, and set up semantic versioning and CI/CD pipelines with GitHub Actions and Docker.',
+        demo: '',
+        image: realEstate,
+        role: 'Software Developer Engineer Intern',
+
+    }
     // {
     //     id: 4,
     //     name: 'Heart Disease Predictor',
