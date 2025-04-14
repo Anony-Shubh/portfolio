@@ -1,5 +1,4 @@
 // @flow strict
-/*
 import { personalData } from "@/utils/data/personal-data";
 
 async function getBlog(slug) {
@@ -24,4 +23,3 @@ async function BlogDetails({params}) {
 };
 
 export default BlogDetails;
-*/
